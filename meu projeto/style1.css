@@ -1,0 +1,103 @@
+/* Reset de estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Corpo da página */
+body {
+    background-color: #f0f0f0; /* Cor de fundo da página */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Configuração do banner */
+.banner {
+    width: 100%; /* Faz o banner ocupar a largura total */
+    overflow: hidden; /* Garante que elementos dentro do banner não ultrapassem seus limites */
+}
+
+.banner img {
+    width: 100%; /* Faz a imagem do banner ocupar toda a largura */
+    height: 676px; /* Define uma altura fixa para o banner */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
+}
+
+/* Configuração do cabeçalho (header) */
+.header {
+    display: flex; /* Usa Flexbox para organização */
+    background-color: rgb(7, 145, 7); /* Define a cor de fundo do cabeçalho */
+    padding: 0px;
+    justify-content: center; /* Centraliza o conteúdo dentro do cabeçalho */
+}
+
+/* Configuração da logo da página */
+.imagem {
+    max-width: 100px; /* Define o tamanho máximo da logo */
+    height: auto; /* Mantém a proporção original da logo */
+}
+
+/* Estilo dos cartões de conteúdo */
+.card {
+    width: 500px; /* Largura fixa do cartão */
+    margin: auto; /* Centraliza o cartão */
+    padding: 20px; /* Espaçamento interno do cartão */
+    background-color: white; /* Cor de fundo branca */
+    margin-top: 50px; /* Espaço superior */
+    margin-bottom: 50px; /* Espaço inferior */
+    border-radius: 10px; /* Arredonda os cantos do cartão */
+}
+
+/* Configuração dos títulos */
+h1 {
+    font-weight: 400; /* Define peso da fonte */
+    color: green; /* Cor do texto */
+    text-align: center; /* Centraliza o título */
+    padding-bottom: 20px; /* Espaçamento abaixo do título */
+    font-size: 20px; /* Tamanho da fonte */
+}
+
+/* Estilo para os itens de lista */
+li {
+    list-style-position: inside; /* Posição do marcador dentro do texto */
+    line-height: 40px; /* Espaçamento entre as linhas */
+}
+
+/* Configuração do rodapé (footer) */
+.footer {
+    background-color: green; /* Cor de fundo do rodapé */
+    height: 150px; /* Altura do rodapé */
+    display: flex; /* Usa Flexbox para organização */
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+    padding: 20px; /* Espaçamento interno */
+    justify-content: space-between; /* Espaça os elementos do rodapé igualmente */
+    color: #ffffff; /* Cor do texto */
+    font-weight: bold; /* Peso da fonte */
+}
+
+/* Lista dentro do rodapé */
+.footer ul {
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove o margin padrão */
+    list-style: none; /* Remove os marcadores da lista */
+}
+
+.footer ul li {
+    margin: 5px 0; /* Espaçamento entre os itens da lista */
+    font-size: 15px; /* Tamanho do texto */
+}
+
+/* Logo do rodapé */
+.logofooter {
+    object-fit: contain; /* Ajusta a logo dentro do espaço disponível */
+    height: 100%; /* Ocupa toda a altura do rodapé */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .banner {
+        width: 80%; /* Ajusta a largura do banner para telas menores */
+    }
+}
